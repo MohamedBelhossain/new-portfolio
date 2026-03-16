@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohamed Belhossain — Cybersecurity & Full Stack Developer. Computer Science student at FS Tétouan, CTF player, penetration testing enthusiast." />
+  <meta name="author" content="Mohamed Belhossain" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Mohamed Belhossain — Cybersecurity & Full Stack Developer" />
+  <meta property="og:description" content="Computer Science student at FS Tétouan. CTF player, penetration tester, full stack web developer." />
+  <meta property="og:type"        content="website" />
+
+  <title>Mohamed Belhossain — Cybersecurity & Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background layers -->
+  <div class="bg-grid"      aria-hidden="true"></div>
+  <div class="bg-scanlines" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav__logo"><span>~/</span>mbelhossain</a>
+
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav__drawer" role="dialog" aria-label="Mobile navigation">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#security">Security</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <header id="hero" class="hero">
+    <div class="bg-glow bg-glow--green" aria-hidden="true"></div>
+    <div class="bg-glow bg-glow--cyan"  aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <div class="hero__tag">
+        <span class="pulse-dot"></span>
+        Available for opportunities
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__name">Mohamed</span>
+        <span class="hero__name hero__name--accent">Belhossain<span class="cursor" aria-hidden="true"></span></span>
+      </h1>
+
+      <p class="hero__sub">
+        <span class="hero__sub-static">// </span><span
+          data-typewriter='["Cybersecurity & Full Stack Developer","Penetration Tester","CTF Player","Web Application Developer"]'
+          class="hero__sub-dynamic"
+        ></span><span class="cursor" aria-hidden="true"></span>
+      </p>
+
+      <p class="hero__desc">
+        21-year-old Computer Science student at FS Tétouan, passionate about cybersecurity,
+        penetration testing, and building robust web applications.
+        CTF player. OWASP practitioner. Future security engineer.
+      </p>
+
+      <div class="hero__btns">
+        <a href="#projects"  class="btn btn--primary">View Projects</a>
+        <a href="#contact"   class="btn btn--secondary">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════ -->
+  <section id="about" class="section section--alt">
+    <div class="section-label">01 / About</div>
+    <h2>Who I Am <span class="dim">&amp; What I Do</span></h2>
+
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>
+          I'm studying <strong>Licence — Génie Informatique &amp; Développement Logiciel</strong>
+          at the Faculté des Sciences de Tétouan, with a strong focus on cybersecurity and full
+          stack web development. I build software that is not only functional — but secure.
+        </p>
+        <p>
+          My work spans from full stack web applications to <strong>penetration testing tools</strong>,
+          OWASP Top 10 research, and active Capture The Flag competition.
+          I believe great developers think like attackers.
+        </p>
+        <p>
+          My PFE (final year project) is a <strong>web vulnerability scanner</strong> built in Python —
+          combining Nmap, automated recon tools, and custom detection logic to map
+          real-world attack surfaces.
+        </p>
+      </div>
+
+      <div class="stats-grid reveal-group">
+        <div class="stat-card">
+          <span class="stat-card__num">GI&amp;DL</span>
+          <span class="stat-card__label">Génie Informatique &amp; Développement Logiciel</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">21</span>
+          <span class="stat-card__label">Years Old</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">CTF</span>
+          <span class="stat-card__label">Active Competitor</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">SEC</span>
+          <span class="stat-card__label">Cybersecurity Focus</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SKILLS
+  ══════════════════════════════════════ -->
+  <section id="skills" class="section">
+    <div class="section-label">02 / Skills</div>
+    <h2>Technical <span class="dim">Arsenal</span></h2>
+
+    <div class="skills-grid reveal-group">
+
+      <div class="skill-card">
+        <span class="skill-card__icon">🔒</span>
+        <h3 class="skill-card__title">Cybersecurity</h3>
+        <div class="tag-group">
+          <span class="tag tag--red">Penetration Testing</span>
+          <span class="tag tag--red">OWASP Top 10</span>
+          <span class="tag tag--red">Nmap</span>
+          <span class="tag tag--red">Web Vuln. Scanning</span>
+          <span class="tag tag--red">CTF</span>
+          <span class="tag tag--red">Cryptography</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-card__icon">🌐</span>
+        <h3 class="skill-card__title">Web Development</h3>
+        <div class="tag-group">
+          <span class="tag tag--green">Node.js / Express</span>
+          <span class="tag tag--green">React</span>
+          <span class="tag tag--green">PHP</span>
+          <span class="tag tag--green">HTML / CSS / JS</span>
+          <span class="tag tag--green">EJS</span>
+          <span class="tag tag--green">JWT / Auth</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-card__icon">🐍</span>
+        <h3 class="skill-card__title">Python &amp; Data Science</h3>
+        <div class="tag-group">
+          <span class="tag tag--cyan">BeautifulSoup</span>
+          <span class="tag tag--cyan">Pandas</span>
+          <span class="tag tag--cyan">Seaborn / Matplotlib</span>
+          <span class="tag tag--cyan">Statistical Modelling</span>
+          <span class="tag tag--cyan">Audio Processing</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-card__icon">☕</span>
+        <h3 class="skill-card__title">OOP &amp; Java</h3>
+        <div class="tag-group">
+          <span class="tag tag--yellow">Java</span>
+          <span class="tag tag--yellow">Java Swing</span>
+          <span class="tag tag--yellow">AWT</span>
+          <span class="tag tag--yellow">JavaFX</span>
+          <span class="tag tag--yellow">JDBC / MySQL</span>
+          <span class="tag tag--yellow">UML / COO</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-card__icon">🗄️</span>
+        <h3 class="skill-card__title">Databases</h3>
+        <div class="tag-group">
+          <span class="tag tag--green">MongoDB</span>
+          <span class="tag tag--green">MySQL</span>
+          <span class="tag tag--green">SQL Avancé</span>
+          <span class="tag tag--cyan">JDBC</span>
+          <span class="tag tag--cyan">NoSQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <span class="skill-card__icon">🏗️</span>
+        <h3 class="skill-card__title">CS Fundamentals</h3>
+        <div class="tag-group">
+          <span class="tag tag--muted">C / C++</span>
+          <span class="tag tag--muted">Assembleur</span>
+          <span class="tag tag--muted">Algorithmique</span>
+          <span class="tag tag--muted">Théorie des Langages</span>
+          <span class="tag tag--muted">Recherche Opérationnelle</span>
+          <span class="tag tag--muted">Linux</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       PROJECTS
+  ══════════════════════════════════════ -->
+  <section id="projects" class="section section--alt">
+    <div class="section-label">03 / Projects</div>
+    <h2>What I've <span class="dim">Built</span></h2>
+
+    <div class="projects-grid reveal-group">
+
+      <!-- PFE -->
+      <article class="project-card project-card--featured">
+        <span class="project-card__badge">PFE</span>
+        <div class="project-card__num">// 01</div>
+        <h3 class="project-card__title">Web Vulnerability Scanner</h3>
+        <p class="project-card__desc">
+          Penetration testing application that automates detection of common web vulnerabilities.
+          Built in Python with Nmap, automated recon tools, and custom exploit detection logic
+          targeting OWASP Top 10 attack surfaces.
+        </p>
+        <div class="tag-group">
+          <span class="tag tag--red">Python</span>
+          <span class="tag tag--red">Nmap</span>
+          <span class="tag tag--red">OWASP Top 10</span>
+          <span class="tag tag--red">Pentest</span>
+          <span class="tag tag--cyan">Security Research</span>
+        </div>
+      </article>
+
+      <!-- Exam platform -->
+      <article class="project-card">
+        <div class="project-card__num">// 02</div>
+        <h3 class="project-card__title">Online Exam Platform</h3>
+        <p class="project-card__desc">
+          Full stack web app for teachers and students. Teachers create exams with MCQs, open
+          questions, media uploads, and time limits. Students join via unique links. Features JWT
+          auth, role-based access control, bcrypt hashing, and Levenshtein-based answer tolerance.
+        </p>
+        <div class="tag-group">
+          <span class="tag tag--green">Node.js</span>
+          <span class="tag tag--green">Express</span>
+          <span class="tag tag--green">MongoDB</span>
+          <span class="tag tag--yellow">EJS</span>
+          <span class="tag tag--red">JWT</span>
+          <span class="tag tag--muted">bcrypt</span>
+        </div>
+        <div class="project-card__links">
+          <a href="https://github.com/MohamedBelhossain/exam-plateform" target="_blank" rel="noopener" class="link-btn">⌥ GitHub</a>
+          <a href="https://exam-plateform.vercel.app"                   target="_blank" rel="noopener" class="link-btn">↗ Live Demo</a>
+        </div>
+      </article>
+
+      <!-- CampusHub -->
+      <article class="project-card">
+        <div class="project-card__num">// 03</div>
+        <h3 class="project-card__title">CampusHub</h3>
+        <p class="project-card__desc">
+          All-in-one university platform for students and staff. Includes course management,
+          student profiles, announcements, and a resource library. Built with a modern interface
+          focused on usability for academic environments.
+        </p>
+        <div class="tag-group">
+          <span class="tag tag--green">React</span>
+          <span class="tag tag--green">Node.js</span>
+          <span class="tag tag--green">MongoDB</span>
+          <span class="tag tag--cyan">Express</span>
+          <span class="tag tag--cyan">Full Stack</span>
+        </div>
+      </article>
+
+      <!-- Java Desktop -->
+      <article class="project-card">
+        <div class="project-card__num">// 04</div>
+        <h3 class="project-card__title">Java Desktop Application</h3>
+        <p class="project-card__desc">
+          Object-oriented desktop app built with Java Swing and AWT using MVC architecture and
+          UML-driven design. Full GUI with event-driven logic, connected to a MySQL database via
+          JDBC for complete CRUD operations.
+        </p>
+        <div class="tag-group">
+          <span class="tag tag--yellow">Java</span>
+          <span class="tag tag--yellow">Java Swing</span>
+          <span class="tag tag--yellow">AWT</span>
+          <span class="tag tag--yellow">JDBC</span>
+          <span class="tag tag--yellow">MySQL</span>
+          <span class="tag tag--yellow">UML</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       SECURITY
+  ══════════════════════════════════════ -->
+  <section id="security" class="section">
+    <div class="section-label">04 / Security</div>
+    <h2>Security <span class="dim">Focus</span></h2>
+
+    <div class="ctf-banner reveal">
+      <div>
+        <h3 class="ctf-banner__title">CTF Player &amp; Aspiring Security Engineer</h3>
+        <p class="ctf-banner__desc">
+          I actively compete in Capture The Flag competitions, sharpening offensive and defensive
+          skills across web exploitation, cryptography, reverse engineering, and forensics.
+          My goal is to work professionally in cybersecurity — building systems that resist attacks
+          from the ground up.
+        </p>
+        <div class="tag-group">
+          <span class="tag tag--red">Web Exploitation</span>
+          <span class="tag tag--red">Cryptography</span>
+          <span class="tag tag--muted">Forensics</span>
+          <span class="tag tag--muted">Reverse Engineering</span>
+          <span class="tag tag--red">Recon &amp; OSINT</span>
+        </div>
+      </div>
+      <div class="ctf-banner__badge" aria-hidden="true">CTF</div>
+    </div>
+
+    <div class="section-label" style="margin-bottom:20px;">
+      OWASP Top 10 — Studied &amp; Applied
+    </div>
+
+    <div class="owasp-grid reveal-group">
+      <div class="owasp-item"><span class="owasp-item__num">A01</span> Broken Access Control</div>
+      <div class="owasp-item"><span class="owasp-item__num">A02</span> Cryptographic Failures</div>
+      <div class="owasp-item"><span class="owasp-item__num">A03</span> Injection</div>
+      <div class="owasp-item"><span class="owasp-item__num">A04</span> Insecure Design</div>
+      <div class="owasp-item"><span class="owasp-item__num">A05</span> Security Misconfiguration</div>
+      <div class="owasp-item"><span class="owasp-item__num">A06</span> Vulnerable Components</div>
+      <div class="owasp-item"><span class="owasp-item__num">A07</span> Authentication Failures</div>
+      <div class="owasp-item"><span class="owasp-item__num">A08</span> Software &amp; Data Integrity</div>
+      <div class="owasp-item"><span class="owasp-item__num">A09</span> Security Logging Failures</div>
+      <div class="owasp-item"><span class="owasp-item__num">A10</span> SSRF</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EDUCATION
+  ══════════════════════════════════════ -->
+  <section id="education" class="section section--alt">
+    <div class="section-label">05 / Education</div>
+    <h2>Academic <span class="dim">Path</span></h2>
+
+    <div class="timeline">
+
+      <div class="timeline__item reveal">
+        <div class="timeline__dot"></div>
+        <div class="timeline__date">2025 — Present</div>
+        <div class="timeline__title">Licence — Génie Informatique &amp; Développement Logiciel</div>
+        <div class="timeline__sub">Faculté des Sciences, Tétouan</div>
+        <div class="timeline__desc">
+          Advanced studies in cybersecurity, full stack development, software architecture,
+          advanced databases, and secure system design.
+        </div>
+      </div>
+
+      <div class="timeline__item reveal">
+        <div class="timeline__dot"></div>
+        <div class="timeline__date">2022 — 2025</div>
+        <div class="timeline__title">DEUG — Génie Informatique &amp; Développement Logiciel</div>
+        <div class="timeline__sub">Faculté des Sciences, Tétouan</div>
+        <div class="timeline__desc">
+          Algorithms, OOP with Java, web development, databases (SQL &amp; NoSQL), Python,
+          data science, system architecture, cryptography, PHP, UML, operational research,
+          and formal language theory. PFE: Web Vulnerability Scanner.
+        </div>
+      </div>
+
+      <div class="timeline__item reveal">
+        <div class="timeline__dot"></div>
+        <div class="timeline__date">2021 — 2022</div>
+        <div class="timeline__title">Baccalauréat Sciences Mathématiques A</div>
+        <div class="timeline__sub">Lycée Ibnou Rochd, Al Hoceima</div>
+        <div class="timeline__desc">Scientific baccalaureate with strong mathematics background.</div>
+      </div>
+
+    </div>
+
+    <div class="section-label" style="margin-top:56px; margin-bottom:16px;">Languages</div>
+    <div class="lang-grid reveal-group">
+      <div class="lang-item">
+        <span class="lang-item__name">Arabic</span>
+        <span class="lang-item__level">Native</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-item__name">French</span>
+        <span class="lang-item__level">B1</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-item__name">English</span>
+        <span class="lang-item__level">B2</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════ -->
+  <section id="contact" class="section section--alt">
+    <div class="contact__inner reveal">
+      <div class="section-label section-label--center">06 / Contact</div>
+      <h2 style="text-align:center;">Let's <span class="dim">Connect</span></h2>
+      <p class="contact__desc">
+        Whether it's a cybersecurity role, a web project, or just a conversation about
+        CTF and security — I'm always open to connecting.
+      </p>
+
+      <div class="contact__links">
+        <a href="mailto:mohamed.belhossain@etu.uae.ac.ma" class="contact-link">
+          ✉ &nbsp;Email
+        </a>
+        <a href="https://github.com/MohamedBelhossain" target="_blank" rel="noopener" class="contact-link">
+          ⌥ &nbsp;GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/mohamed-belhossain-b071b2337" target="_blank" rel="noopener" class="contact-link">
+          ⬡ &nbsp;LinkedIn
+        </a>
+      </div>
+
+      <a href="https://portfolio-pi-nine-91.vercel.app/resume.html" target="_blank" rel="noopener"
+         class="btn btn--primary" style="margin:0 auto;">
+        View CV
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <span>Mohamed Belhossain © 2025 — FS Tétouan</span>
+    <span class="footer__right">// Built with intent. Secured by design.</span>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
